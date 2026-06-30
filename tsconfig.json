@@ -1,0 +1,12 @@
+{
+  /* @TODO_REAL_PROJECT: Root TypeScript configuration reference. 
+    Manages project references to ensure separate build targets for 
+    the application source and build-tooling scripts.
+    * PUBLIC DEMO VERSION: Structure preserved to maintain standard TypeScript workspace integrity.
+  */
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
