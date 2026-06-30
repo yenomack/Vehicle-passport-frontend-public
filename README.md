@@ -1,55 +1,58 @@
-🚗 Vehicle Passport
-Vehicle Passport è una piattaforma decentralizzata per la tokenizzazione e la verifica dello storico dei veicoli. Il progetto integra la tecnologia Blockchain (NFT/EVM) con un'infrastruttura web moderna per garantire l'immutabilità e la trasparenza dei dati relativi alla manutenzione e alla proprietà dei veicoli.
+# Vehicle Passport (Public Demo)
 
-🚀 Panoramica Tecnologica
-Questa applicazione è stata sviluppata con uno stack tecnologico di livello enterprise per garantire scalabilità, sicurezza e una User Experience fluida:
+**Vehicle Passport** is a decentralized asset tokenization and verification platform. This repository contains the **simplified, client-side demonstration** of the platform's frontend architecture. 
 
-Frontend: React 19 + TypeScript.
+It is designed to showcase enterprise-grade UI/UX patterns, Web3-ready context management, and Role-Based Access Control (RBAC) in a safe, interactive sandbox environment.
 
-Routing & Auth: Gestione avanzata dei ruoli (RBAC) tramite react-router-dom e sessioni Web3.
+## ⚠️ Project Status: Public Demo
+To ensure security and compliance, all real-world backend integrations, private API endpoints, and direct blockchain write-access have been abstracted. This version is intended for portfolio demonstration and UI testing purposes only.
 
-Interazione Blockchain: Integrazione con ethers.js per firme di transazioni e gestione contratti.
+## Key Features
+- **Simulated Web3 Wallet Context:** Manages connection status, user roles, and authentication tokens via a mock provider.
+- **Dynamic RBAC (Role-Based Access Control):** Navigation and feature availability update in real-time based on the user's role (Owner, Technician, Admin).
+- **Interactive Role Switcher:** A debug utility built into the sidebar, allowing evaluators to test interface states for all user roles instantly.
+- **Internationalization (i18n):** Multi-language support (IT/EN) with dynamic asset loading.
+- **Responsive UI/UX:** Built with React, TypeScript, and Material UI, featuring a robust, scalable component architecture.
 
-Design System: Interfaccia UI costruita con Material UI (MUI) e un tema personalizzato coerente con il brand.
+## Getting Started
 
-Parsing Avanzato: Elaborazione client-side di PDF e QR Code tramite pdfjs-dist e jsQR.
+Follow these instructions to run the demo locally on your machine.
 
-Internazionalizzazione: Supporto nativo multilingua (Italiano/Inglese) tramite i18next.
+### Prerequisites
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-🛠 Caratteristiche Principali
-Sicurezza Blockchain: Gestione dinamica dei gas fee (EIP-1559) per transazioni ottimizzate.
+### Installation
 
-Data Integrity: Verifica crittografica dello storico veicoli tramite comparazione di hash on-chain e off-chain.
-
-RBAC (Role-Based Access Control): Sistema di routing protetto basato sui ruoli utente (Proprietario, Tecnico, Admin, Acquirente).
-
-UX Professionale: Gestione centralizzata dei feedback utente tramite Snackbar e stati di caricamento asincroni ottimizzati.
-
-📦 Setup & Installazione
-Per eseguire il progetto in locale:
-
-Clona il repository.
-
-Installa le dipendenze:
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/yenomack/Vehicle-passport-frontend-public.git](https://github.com/yenomack/Vehicle-passport-frontend-public.git)
+   cd Vehicle-passport-frontend-public
+Install dependencies:
 
 Bash
 npm install
-Avvia l'ambiente di sviluppo:
+# or
+yarn install
+Running the Demo
+Start the development server:
 
 Bash
 npm run dev
-🏗 Architettura del Progetto
-Il progetto segue un'architettura modulare rigorosa:
+# or
+yarn dev
+Open your browser and navigate to http://localhost:5173 (or the port specified in your terminal).
 
-/src/api: Layer di astrazione per le richieste API.
+Built With
+React (Vite)
 
-/src/context: Gestione dello stato globale per l'autenticazione Web3.
+TypeScript
 
-/src/layouts: Componenti di layout per mantenere la coerenza UI/UX.
+Material UI (MUI)
 
-/src/router: Logica di protezione delle rotte e RBAC.
+i18next
 
-/src/theme: Configurazione centralizzata del Design System Material UI.
+React Router
 
-📝 Note per lo sviluppatore
-Questo progetto è strutturato per separare nettamente la logica di business dalle interfacce di presentazione, facilitando il testing e la manutenzione su larga scala.
+Developed for portfolio showcase purposes. Please note that this is a mocked simulation.
